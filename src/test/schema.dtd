@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- DTD for PDF Segmentation Processors -->
+<!-- Elements -->
+
+<!ELEMENT segments (segment*)>
+<!ATTLIST segments xmlns:townnews CDATA #FIXED "http://www.townnews.com/ns/segment/1.0">
+<!ELEMENT segment (image?,fields?,content?)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT fields (field*)>
+<!ELEMENT field (#PCDATA)>
+
+<!-- Attributes -->
+
+<!ATTLIST segment id ID #REQUIRED>
+<!ATTLIST segment parentid IDREF #IMPLIED>
+<!ATTLIST segment referenceid IDREF #IMPLIED>
+<!ATTLIST segment x1 CDATA #IMPLIED>
+<!ATTLIST segment x2 CDATA #IMPLIED>
+<!ATTLIST segment y1 CDATA #IMPLIED>
+<!ATTLIST segment y2 CDATA #IMPLIED>
+<!ATTLIST segment type (article|ad|coupon|image) #REQUIRED>
+<!ATTLIST segment pageid CDATA #IMPLIED>
+<!ATTLIST field name (title|advertiser_id|price|currency|company|address|city|region|postal_code|phone|website|product_id|make|model|year|msrp|color|condition|latitude|longitude|vin|mileage|body_style|transmission|bathrooms|bedrooms|square_feet|lot_size|mls_id|pets_allowed|agent|fsbo|employee_type|required_education|required_experience|salary|hourly_rate|occupation|alt_title|byline|category) #REQUIRED>
