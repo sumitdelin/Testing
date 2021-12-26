@@ -5,7 +5,9 @@ import java.util.List;
 public class Address {
 
     int aid;
+    
     String city;
+    
     java.util.List<Employee> employees;
     
         
