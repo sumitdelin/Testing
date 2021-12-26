@@ -3,7 +3,7 @@ package bean;
 import java.util.List;
 
 public class Address {
-
+// this is address commeit	
     int aid;
     
     String city;
