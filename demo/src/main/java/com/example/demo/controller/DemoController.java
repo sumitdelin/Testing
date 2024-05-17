@@ -18,4 +18,7 @@ public class DemoController {
 	public String getTestMessage3() {
 		return "test on ...3";
 	}
+	public String getTestMessage4() {
+		return "test on ...4";
+	}
 }
