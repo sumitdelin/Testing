@@ -9,4 +9,10 @@ public class DemoController {
 	public String getTestMessage() {
 		return "test on ...";
 	}
+	public String getTestMessage1() {
+		return "test on ...1";
+	}
+	public String getTestMessage2() {
+		return "test on ...2";
+	}
 }
