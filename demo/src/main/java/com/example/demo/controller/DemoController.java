@@ -36,5 +36,8 @@ public class DemoController {
 	}
 	public String getTestMessage10() {
 		return "test on ...10";
+	}	
+	public String getTestMessage11() {
+		return "test on ...11";
 	}
 }
